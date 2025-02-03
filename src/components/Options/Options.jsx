@@ -1,5 +1,4 @@
 import css from "./Options.module.css";
-// import clsx from "clsx";
 
 function Options({ onUpdate, totalFeedbacks, onReset }) {
   return (
