@@ -1,0 +1,24 @@
+.wrapper {
+  display: flex;
+  gap: 10px;
+  padding: 20px 0;
+}
+
+.button {
+  background-color: lightgray;
+  border: solid black;
+  outline: black;
+}
+
+.button:hover {
+  background-color: rgb(236, 234, 234);
+  outline: none;
+}
+
+.button:active {
+  background-color: lightgray;
+}
+
+.hidden {
+  display: none;
+}
