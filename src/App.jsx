@@ -53,7 +53,7 @@ function App() {
         totalFeedbacks={totalFeedbacks}
         onReset={resetValues}
       />
-      {Boolean(totalFeedbacks) && (
+      {totalFeedbacks > 0 ? (
         <Feedback
           good={feedbackValues.good}
           neutral={feedbackValues.neutral}
@@ -61,8 +61,9 @@ function App() {
           total={totalFeedbacks}
           positive={positivePercent}
         />
+      ) : (
+        <Notification />
       )}
-      <Notification totalFeedbacks={totalFeedbacks} />
     </>
   );
 }

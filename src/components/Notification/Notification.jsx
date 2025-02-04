@@ -1,5 +1,5 @@
-function Notification({ totalFeedbacks }) {
-  return Boolean(!totalFeedbacks) && <>No feedback yet</>;
+function Notification() {
+  return <div>No feedback yet</div>;
 }
 
 export default Notification;
